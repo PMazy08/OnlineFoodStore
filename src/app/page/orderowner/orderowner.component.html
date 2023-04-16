@@ -1,0 +1,61 @@
+<body>
+  <mat-toolbar class="fxLayout drak app-toolbar" style="width:100%;height: auto; flex-direction: row;justify-content:space-between;
+    background-color: #ffffff ;color: rgb(0, 0, 0); position: -webkit-sticky; position: sticky; top: 0px; z-index: 1000;box-shadow: 1px 0px 5px #000000;" >
+    <div class="container" style="margin-top: 50px;display: inline-flex;justify-content:space-between; ">
+      <div class="fxLayout" style="flex-direction:row; align-items: center; position: relative;">
+        <h1 style="font-size: 30px;font-weight: bolder;">Owner</h1>
+        <label style="margin-top: 10px; margin-bottom: 15px;color: crimson;font-size: 15px;"><< Black</label>
+      </div>
+    </div>
+  </mat-toolbar>
+
+<div style="width: 100%; height: auto; background-color: #D9D9D9;">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12" style="margin-top: 20px;">
+        <h3>รายการของลูกค้า</h3>
+      </div>
+
+      <div class="col-lg-12"style="display: inline-flex; margin-top: 20px; height: auto; border-radius: 10px; ">
+        <mat-card class="example-card" style="width: 100%; height: auto;">
+          <div style="display: flex; flex-direction: column; margin: 20px 20px 0px;">
+
+            <!-- tests -->
+            <div (click)="openOrder()" style="cursor:pointer;display: flex; flex-direction: column; height: auto;background-color:#D9D9D9; margin-bottom: 20px;">
+              <span>ข้าวผัดน้ำพริกกะปิ</span>
+              <span>&#3647; 79</span>
+            <span style="color: #27BEDF">จัดส่งแล้ว</span>
+            </div>
+
+            <div style="cursor:pointer;display: flex; flex-direction: column; height: auto;background-color:#D9D9D9; margin-bottom: 20px;">
+              <span>ข้าวผัดน้ำพริกกะปิ</span>
+              <span>&#3647; 79</span>
+            <span style="color: #27BEDF">จัดส่งแล้ว</span>
+            </div>
+
+            <div style="cursor:pointer;display: flex; flex-direction: column; height: auto;background-color:#D9D9D9; margin-bottom: 20px;">
+              <span>ข้าวผัดน้ำพริกกะปิ</span>
+              <span>&#3647; 79</span>
+            <span style="color: #27BEDF">จัดส่งแล้ว</span>
+            </div>
+
+          </div>
+        </mat-card>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <footer style="background-color: rgb(57, 57, 58); margin-top: 40px;">
+    <div class="container d-flex align-items-center justify-content-center" style="height:200px; background-color: rgb(57, 57, 58);">
+      <p style="color: #ffffff;">&copy; 2023 Pitak Photirach</p>
+    </div>
+
+  </footer>
+
+</div>
+
+</body>

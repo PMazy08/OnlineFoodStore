@@ -1,0 +1,116 @@
+<body>
+  <mat-toolbar class="fxLayout drak app-toolbar" style="width:100%;height: auto; flex-direction: row;justify-content:space-between;
+  background-color: #ffffff ;color: rgb(0, 0, 0); position: -webkit-sticky; position: sticky; top: 0px; z-index: 1000;box-shadow: 1px 0px 5px #000000;" >
+  <div class="container" style="margin-top: 50px;display: inline-flex;justify-content:space-between; ">
+    <div class="fxLayout" style="flex-direction:row; align-items: center; position: relative;">
+      <h1 style="font-size: 30px;font-weight: bolder;">NAME STORE</h1>
+      <mat-chip-listbox aria-label="Fish selection" style="margin-top: 10px; margin-bottom: 15px;">
+        <mat-chip-option style="background-color:  rgb(30, 210, 78);" selected>เมนูทั้งหมด</mat-chip-option>
+        <mat-chip-option style="background-color:  rgb(30, 210, 78);">อาหารจานเดียว</mat-chip-option>
+        <mat-chip-option style="background-color:  rgb(30, 210, 78);">กับข้าว</mat-chip-option>
+        <mat-chip-option style="background-color:  rgb(30, 210, 78);">อาหารทานเล่น</mat-chip-option>
+        <mat-chip-option style="background-color:  rgb(30, 210, 78);">ของหวาน</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+    <div>
+      <mat-icon (click)="openBasket()" class="grow" style="margin-right: 20px;width: 40px; height: 40px;cursor:pointer ">
+        <div style="display: flex; justify-content: center;">
+          <img width="100%" src="https://www.pngall.com/wp-content/uploads/5/Shopping-Cart.png" alt="">
+        </div>
+      </mat-icon>
+
+      <mat-icon (click)="openOrder()" class="grow" style="margin-right: 20px;width: 40px; height: 40px;cursor:pointer">
+        <div style="display: flex; justify-content: center;">
+          <img width="100%" src="https://www.pngarts.com/files/2/Order-Transparent-Background-PNG.png" alt="">
+        </div>
+      </mat-icon>
+    </div>
+  </div>
+
+</mat-toolbar>
+
+<div style="width: 100%; height: auto;">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-12" style="margin-top: 20px;">
+        <h3>เมนูทั้งหมด</h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div (click)="openItem()" class="col-lg-4"style="display: inline-flex; margin-top: 20px;height:200px; border-radius: 10px; cursor:pointer">
+        <mat-card class="example-card" style="width: 100%; height: 90%;">
+          <mat-card-header>
+            <img width="150px"  src="https://img.wongnai.com/p/1920x0/2018/03/01/a47f84a3a653472cb86d4874ac22e2fe.jpg" style=" position: absolute;left: 5%; top: 50%; transform: translate(0%,-50%); border-radius: 5px;" alt=" ">
+            <mat-card-title style="position: absolute; right: 5%; top: 20%;">ข้าวผัดน้ำพริกกะปิ</mat-card-title>
+            <mat-card-title style="position: absolute; right: 5%; top: 60%;">&#3647; 79</mat-card-title>
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+      <div (click)="openItem()" class="col-lg-4"style="display: inline-flex; margin-top: 20px;height:200px; border-radius: 10px;">
+        <mat-card class="example-card" style="width: 100%; height: 90%;">
+          <mat-card-header>
+            <img width="150px"  src="https://img.wongnai.com/p/1920x0/2018/12/11/de5a4444f5b4418bb636eaad2ddb0342.jpg" style=" position: absolute;left: 5%; top: 50%; transform: translate(0%,-50%); border-radius: 5px;" alt=" ">
+            <mat-card-title style="position: absolute; right: 5%; top: 20%;">หอยลายผัดพริกเผา</mat-card-title>
+            <mat-card-title style="position: absolute; right: 5%; top: 60%;">&#3647; 79</mat-card-title>
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+      <div (click)="openItem()" class="col-lg-4"style="display: inline-flex; margin-top: 20px;height:200px; border-radius: 10px;">
+        <mat-card class="example-card" style="width: 100%; height: 90%;">
+          <mat-card-header>
+            <img width="150px"  src="https://img.wongnai.com/p/1920x0/2018/02/14/021350fce478468b98c775abd057a3c0.jpg" style=" position: absolute;left: 5%; top: 50%; transform: translate(0%,-50%); border-radius: 5px;" alt=" ">
+            <mat-card-title style="position: absolute; right: 5%; top: 20%;">ข้าวผัดกุ้ง</mat-card-title>
+            <mat-card-title style="position: absolute; right: 5%; top: 60%;">&#3647; 79</mat-card-title>
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+      <div class="col-lg-4"style="display: inline-flex; margin-top: 20px;height:200px; border-radius: 10px;">
+        <mat-card class="example-card" style="width: 100%; height: 90%;">
+          <mat-card-header>
+            <img width="150px"  src="https://img.wongnai.com/p/1920x0/2018/09/26/d10fea7a0f4d4968a9a697ef0e0ab526.jpg" style=" position: absolute;left: 5%; top: 50%; transform: translate(0%,-50%); border-radius: 5px;" alt=" ">
+            <mat-card-title style="position: absolute; right: 5%; top: 20%;">ข้าวเหนียวสังขยา</mat-card-title>
+            <mat-card-title style="position: absolute; right: 5%; top: 60%;">&#3647; 79</mat-card-title>
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+      <div class="col-lg-4"style="display: inline-flex; margin-top: 20px;height:200px; border-radius: 10px;">
+        <mat-card class="example-card" style="width: 100%; height: 90%;">
+          <mat-card-header>
+            <img width="150px"  src="https://img.wongnai.com/p/1920x0/2019/01/14/dd07ce69b10c46dc9cd6c3e121a40c7d.jpg" style=" position: absolute;left: 5%; top: 50%; transform: translate(0%,-50%); border-radius: 5px;" alt=" ">
+            <mat-card-title style="position: absolute; right: 5%; top: 20%;">หมูกระจก</mat-card-title>
+            <mat-card-title style="position: absolute; right: 5%; top: 60%;">&#3647; 79</mat-card-title>
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+      <div class="col-lg-4"style="display: inline-flex; margin-top: 20px;height:200px; border-radius: 10px;">
+        <mat-card class="example-card" style="width: 100%; height: 90%;">
+          <mat-card-header>
+            <img width="150px"  src="https://img.wongnai.com/p/1920x0/2018/12/18/5e8f656e14aa41fa83113e4d94aae164.jpg" style=" position: absolute;left: 5%; top: 50%; transform: translate(0%,-50%); border-radius: 5px;" alt=" ">
+            <mat-card-title style="position: absolute; right: 5%; top: 20%;">ขนมพระพาย</mat-card-title>
+            <mat-card-title style="position: absolute; right: 5%; top: 60%;">&#3647; 79</mat-card-title>
+          </mat-card-header>
+        </mat-card>
+      </div>
+
+    </div>
+
+
+  </div>
+  <footer style="background-color: rgb(57, 57, 58); margin-top: 40px;">
+    <div class="container d-flex align-items-center justify-content-center" style="height:200px; background-color: rgb(57, 57, 58);">
+      <p style="color: #ffffff;">&copy; 2023 Pitak Photirach</p>
+    </div>
+  </footer>
+
+</div>
+
+
+</body>
